@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+ #include<bits/stdc++.h>
 using namespace std;
 #define MX 101
 
@@ -28,6 +28,8 @@ void dfs(int u,int p)
     {
         if(v != p)
         {
+            dfs(v,u);
+            
             if(sz[v] > mx)
             {
                 mx = sz[v];
